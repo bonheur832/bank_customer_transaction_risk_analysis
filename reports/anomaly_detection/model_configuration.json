@@ -1,0 +1,156 @@
+{
+  "dataset_info": {
+    "total_transactions": 568630,
+    "fraud_count": 284315,
+    "fraud_rate": 0.5,
+    "features_used": 15
+  },
+  "detection_methods": {
+    "z_score": {
+      "optimal_threshold": 2.5,
+      "features_used": [
+        "Amount",
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V7",
+        "V9",
+        "V10",
+        "V11",
+        "V12",
+        "V14",
+        "V16",
+        "V17",
+        "V18"
+      ],
+      "performance": {
+        "Threshold": 2.5,
+        "Anomalies_Detected": 64053,
+        "Anomaly_Rate": 0.11264442607671069,
+        "Precision": 0.5839226890231527,
+        "Recall": 0.1315512723563653,
+        "F1_Score": 0.21472695540348136,
+        "Accuracy": 0.5189068462796546
+      }
+    },
+    "isolation_forest": {
+      "optimal_contamination": 0.02,
+      "n_estimators": 100,
+      "features_used": [
+        "V14",
+        "V12",
+        "V4",
+        "V11",
+        "V3",
+        "V10",
+        "V9",
+        "V16",
+        "V1",
+        "V2",
+        "V7",
+        "V17",
+        "V6",
+        "V18",
+        "V5"
+      ],
+      "performance": {
+        "Contamination": 0.02,
+        "Anomalies_Detected": 11366,
+        "Anomaly_Rate": 0.01998839315547896,
+        "Precision": 0.7972901636459616,
+        "Recall": 0.031873098499903274,
+        "F1_Score": 0.06129578836651661,
+        "Accuracy": 0.5118847053444243
+      }
+    },
+    "combined_method": {
+      "weights": {
+        "zscore": 0.4,
+        "isolation": 0.6
+      },
+      "optimal_threshold": 0.1,
+      "performance": {
+        "Threshold": 0.1,
+        "Anomalies_Detected": 287191,
+        "Anomaly_Rate": 0.5050577704306842,
+        "Precision": 0.5544254520510741,
+        "Recall": 0.5600337653658793,
+        "F1_Score": 0.5572154973001158,
+        "Accuracy": 0.5549759949351951
+      }
+    }
+  },
+  "risk_scoring": {
+    "weights": {
+      "zscore_normalized": 0.3,
+      "isolation_score_normalized": 0.4,
+      "amount_normalized": 0.2,
+      "combined_score": 0.1
+    },
+    "thresholds": {
+      "critical": 0.8,
+      "high": 0.6,
+      "medium": 0.4,
+      "low": 0.2
+    }
+  },
+  "alert_system": {
+    "rules": [
+      {
+        "id": "ALT-001",
+        "condition": "Risk_Level == \"Critical\"",
+        "severity": "CRITICAL"
+      },
+      {
+        "id": "ALT-002",
+        "condition": "Risk_Level in [\"Critical\", \"High\"] and Amount > percentile_99",
+        "severity": "HIGH"
+      },
+      {
+        "id": "ALT-003",
+        "condition": "Customer has >= 3 anomalies",
+        "severity": "MEDIUM"
+      },
+      {
+        "id": "ALT-004",
+        "condition": "Extreme V-feature values",
+        "severity": "MEDIUM"
+      }
+    ]
+  },
+  "performance_metrics": {
+    "best_method": "combined_method",
+    "overall_anomaly_rate": 0.5050577704306842,
+    "total_anomalies_detected": 287191
+  },
+  "deployment_info": {
+    "model_files": [
+      "isolation_forest_model.pkl",
+      "robust_scaler.pkl"
+    ],
+    "feature_columns": [
+      "V14",
+      "V12",
+      "V4",
+      "V11",
+      "V3",
+      "V10",
+      "V9",
+      "V16",
+      "V1",
+      "V2",
+      "V7",
+      "V17",
+      "V6",
+      "V18",
+      "V5"
+    ],
+    "thresholds": {
+      "combined_score": 0.1,
+      "zscore": 2.5
+    },
+    "created_date": "2026-02-10 11:30:26",
+    "version": "1.0.0"
+  }
+}

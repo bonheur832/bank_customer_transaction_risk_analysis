@@ -1,0 +1,6 @@
+Risk_Level,Transaction_Count,Percentage
+Critical,1,0.0
+High,35,0.01
+Low,251040,44.15
+Medium,12671,2.23
+Very Low,304883,53.62

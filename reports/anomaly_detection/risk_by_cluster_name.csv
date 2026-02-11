@@ -1,0 +1,7 @@
+Cluster_Name,Transaction_Count,Amount,Risk_Score,Final_Anomaly,Class,Anomaly_Rate,Pct_of_Transactions,Actual_Fraud_Rate
+Premium Customers (High Tier),132426,12609.1086,0.2018,0.5045,0.4991,0.5045,23.29,0.4991
+Standard Customers (High Tier),146267,12383.0946,0.2001,0.5061,0.5004,0.5061,25.72,0.5004
+New Customers (Mid Tier),129569,11911.3554,0.196,0.5056,0.5005,0.5056,22.79,0.5005
+Standard Customers (Mid Tier),90693,11771.0169,0.1947,0.5053,0.5018,0.5053,15.95,0.5018
+New Customers (Low Tier),50099,11012.5376,0.1884,0.5034,0.4989,0.5034,8.81,0.4989
+Standard Customers (Low Tier),19576,10410.6098,0.183,0.5012,0.4953,0.5012,3.44,0.4953

@@ -1,0 +1,9 @@
+Metric,Value
+Total Transactions,"568,630"
+Total Amount ($),"$6,847,418,369.75"
+Average Transaction ($),$12041.96
+Median Transaction ($),$12030.15
+Max Transaction ($),$24039.93
+Min Transaction ($),$50.01
+Fraud Count,"284,315"
+Fraud Rate (%),50.0000%

@@ -1,0 +1,8 @@
+,Recency,Recency,Frequency,Frequency,Monetary,Monetary
+,mean,std,mean,std,mean,std
+RFM_Segment,,,,,,
+At Risk,15.52,9.69,7.78,1.8,88659.6,24401.16
+Champions,2.99,1.94,15.59,2.24,195228.21,32571.82
+Loyal,5.83,4.52,13.33,1.99,162976.47,29548.51
+Needs Attention,8.51,6.95,9.75,1.76,114275.41,25273.86
+Potential,7.11,5.7,11.47,1.57,137667.14,23340.38

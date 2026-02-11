@@ -1,0 +1,116 @@
+
+BANK TRANSACTION RISK ANALYSIS REPORT
+=====================================
+Generated: 2026-02-10 11:30:32
+Total Transactions Analyzed: 568,630
+
+EXECUTIVE SUMMARY
+=================
+
+1. RISK OVERVIEW
+----------------
+• Anomalies Detected: 287,191 (50.5058%)
+• Actual Fraud Cases: 284315
+• Fraud Detection Rate: 56.00%
+• False Positive Rate: 45.0082%
+
+2. DETECTION PERFORMANCE
+------------------------
+• Best Detection Method: Combined Approach
+• Optimal Combined Threshold: 0.100
+• Features Used: 15 most correlated features
+
+3. RISK DISTRIBUTION
+--------------------
+• Critical Risk Transactions: 1
+• High Risk Transactions: 35
+• Total High-Risk Amount: $790,803.69
+
+4. KEY FINDINGS
+---------------
+• Top predictive feature: V7
+• Most effective method: Combined Method
+• Alert threshold: 0.100 (balances precision and recall)
+
+ACTION REQUIRED
+===============
+
+IMMEDIATE ACTIONS (Next 24 hours)
+---------------------------------
+1. **Review Critical Alerts**
+   • Investigate 1 critical risk transactions
+   • Focus on transactions > $23,801.34 with high risk scores
+   • Implement additional verification for suspicious patterns
+
+2. **System Monitoring**
+   • Monitor false positive rate (target: < 5%)
+   • Track detection rate (target: > 85%)
+   • Review alert effectiveness daily
+
+STRATEGIC RECOMMENDATIONS
+=========================
+
+SHORT-TERM (Next 30 days)
+-------------------------
+1. **System Integration**
+   • Implement real-time scoring API
+   • Integrate with transaction processing system
+   • Develop monitoring dashboard
+
+2. **Process Optimization**
+   • Establish investigation workflow
+   • Create risk-based approval processes
+   • Implement feedback loop for model improvement
+
+LONG-TERM (Next 90 days)
+------------------------
+1. **Model Enhancement**
+   • Implement ensemble methods
+   • Add temporal pattern recognition
+   • Incorporate customer behavior analysis
+
+2. **Advanced Features**
+   • Real-time adaptive thresholds
+   • Network analysis for fraud rings
+   • Predictive risk scoring
+
+TECHNICAL IMPLEMENTATION
+------------------------
+1. **Production Deployment**
+   • API endpoint for real-time scoring
+   • Batch processing for historical analysis
+   • Automated model retraining pipeline
+
+2. **Monitoring & Alerting**
+   • Real-time dashboard
+   • Automated alert escalation
+   • Performance tracking
+
+3. **Data Pipeline**
+   • Automated feature engineering
+   • Quality checks and validation
+   • Audit trail for all decisions
+
+PERFORMANCE METRICS
+-------------------
+• Precision: Target > 80%
+• Recall: Target > 85%
+• False Positive Rate: Target < 5%
+• Average Investigation Time: Target < 2 hours
+• Model Retraining: Weekly updates
+
+MODEL FILES GENERATED
+---------------------
+1. isolation_forest_model.pkl
+2. robust_scaler.pkl
+3. model_configuration.json
+4. feature_importance.csv
+
+ALERT SUMMARY
+-------------
+Total Active Alerts: 4
+Critical Alerts: 1
+High Priority Alerts: 1
+
+=====================================
+END OF REPORT

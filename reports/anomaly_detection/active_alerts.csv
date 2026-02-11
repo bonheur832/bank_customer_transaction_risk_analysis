@@ -1,0 +1,5 @@
+Alert_ID,Severity,Description,Count,Total_Amount,Avg_Risk_Score,Action,Customer_Count,Threshold
+ALT-001,CRITICAL,Critical risk transactions detected,1,"$18,796.41",0.867,Immediate review and possible block,,
+ALT-002,HIGH,"High-risk transactions with amount > $23,801.34",4,"$95,579.37",,"Review within 2 hours, consider additional verification",,
+ALT-003,MEDIUM,Customers with multiple anomalous transactions,46310,,,"Customer account review, possible fraud pattern",46310.0,
+ALT-004,MEDIUM,Unusual patterns in V1 feature,2844,,,"Review feature patterns, check for systemic issues",,2.53

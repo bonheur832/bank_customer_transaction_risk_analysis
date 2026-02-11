@@ -1,0 +1,12 @@
+KPI,Value,Target,Status
+Total Transactions,"568,630",Monitor,📊
+Total Transaction Volume,"$6,847,418,370",> $50M,✅
+Average Transaction Value,$12041.96,> $100,✅
+Fraud Count,"284,315",< 500,⚠️
+Fraud Rate,50.0000%,< 0.2%,⚠️
+Unique Customers,"50,000","> 40,000",✅
+Average Transactions per Customer,11.4,> 10,✅
+Average Spend per Customer,$136948.37,"> $1,000",✅
+Peak Transaction Day,Thu,Weekday,✅
+Peak Transaction Hour,15:00,Business Hours,✅
+Average Daily Transactions,6249,"> 5,000",✅

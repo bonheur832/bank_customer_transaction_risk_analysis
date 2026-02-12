@@ -165,3 +165,11 @@ Run the notebooks in the following order:
 3. jupyter notebook notebooks/03_anomaly_detection.ipynb
 
 ---
+
+## Outputs
+
+All generated outputs will be automatically saved to:
+
+📁 reports/Graphs, visualizations, analysis results
+
+📁 models/Trained machine learning models

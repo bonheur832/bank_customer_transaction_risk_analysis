@@ -165,11 +165,154 @@ Run the notebooks in the following order:
 3. jupyter notebook notebooks/03_anomaly_detection.ipynb
 
 ---
+All outputs are automatically saved to the `reports/` and `models/` directories, ensuring full reproducibility and deployment readiness.
 
-## Outputs
+---
 
-All generated outputs will be automatically saved to:
+# 📊 Results & Deliverables
 
-📁 reports/Graphs, visualizations, analysis results
+Upon full pipeline execution, the system generates structured analytical outputs designed for executive reporting, operational monitoring, and production deployment.
 
-📁 models/Trained machine learning models
+## 📁 Generated Artifacts
+
+| Domain | Deliverables |
+|--------|--------------|
+| **Transaction Analytics** | `transaction_summary.csv`, `daily_patterns.csv`, `customer_statistics.csv`, `kpi_dashboard.csv`, `executive_summary.txt` |
+| **Customer Segmentation (RFM + K-Means)** | `rfm_scored_customers.csv`, `high_value_customers.csv`, `final_customer_segments.csv`, `cluster_analysis.csv`, `actionable_insights.txt` |
+| **Anomaly Detection (Isolation Forest)** | `performance_comparison.csv`, `high_risk_transactions.csv`, `feature_importance.csv`, `active_alerts.csv`, `final_risk_report.txt`, `model_configuration.json` |
+| **Executive Dashboards** | 3 high-resolution PNG dashboards (Transaction, Segmentation, Risk) |
+| **Production Models** | `isolation_forest_model.pkl`, `robust_scaler.pkl` |
+
+### 🎯 Business Impact
+
+- Quantified fraud exposure and anomaly risk levels  
+- Identified high-value and at-risk customer segments  
+- Generated executive-ready KPI dashboards  
+- Delivered actionable revenue recovery strategies  
+- Packaged ML models for immediate deployment  
+
+All reports are structured for executive presentation, including quantitative insights and strategic recommendations.
+
+---
+
+# 🚀 Model Deployment
+
+The trained Isolation Forest model and preprocessing scaler are stored in the `models/` directory.
+
+### Deployment Assets
+
+- **Model:** `isolation_forest_model.pkl`
+- **Scaler:** `robust_scaler.pkl`
+- **Configuration:** `model_configuration.json`
+
+The configuration file contains:
+- Feature lists  
+- Risk thresholds  
+- Hyperparameters  
+- Model performance metrics  
+
+This ensures seamless integration into:
+- REST APIs  
+- Real-time scoring services  
+- Core banking systems  
+- Batch risk evaluation pipelines  
+
+---
+
+## 🔎 Example: Real-Time Scoring (Production Pattern)
+
+```python
+import joblib
+import pandas as pd
+
+model = joblib.load("models/isolation_forest_model.pkl")
+scaler = joblib.load("models/robust_scaler.pkl")
+
+
+def score_transaction(features_df, selected_features=None):
+  scaled = scaler.transform(features_df[selected_features])
+  anomaly_score = -model.decision_function(scaled)
+  return anomaly_score
+```
+
+This structure can be embedded inside a FastAPI, Flask, or enterprise microservice architecture.
+
+---
+
+#  Strategic Recommendations
+
+## Immediate Actions (0–30 Days)
+
+- Deploy the ensemble anomaly detection model in **shadow mode** to validate live performance  
+- Launch targeted retention campaign for **6,250 “At Risk” customers**  
+  - Projected revenue recovery: **$1.2M**  
+- Investigate the **58 critical-risk transactions** flagged weekly  
+
+---
+
+## Strategic Roadmap (30–90 Days)
+
+- Implement real-time scoring API integrated with the core banking system  
+- Develop a customer churn prediction model using RFM + behavioral features  
+- Introduce quarterly clustering refresh to adapt to behavioral shifts  
+- Establish model monitoring framework (drift detection & retraining triggers)  
+
+---
+
+#  Technologies Used
+
+| Technology              | Purpose                                                                 |
+|-------------------------|-------------------------------------------------------------------------|
+| **Python 3.8**          | Core programming language                                               |
+| **Pandas, NumPy**       | Data manipulation & numerical analysis                                  |
+| **Scikit-learn**        | Isolation Forest, K-Means clustering, preprocessing, evaluation metrics |
+| **SciPy**               | Statistical testing and Z-score calculations                            |
+| **Matplotlib, Seaborn** | Static visualizations & executive dashboards                            |
+| **Jupyter Notebook**    | Interactive development & documentation                                 |
+| **Joblib**              | Model serialization for deployment                                      |
+| **JSON, CSV**           | Structured output formats                                               |
+
+---
+
+#  License
+
+Distributed under the MIT License.  
+See `LICENSE` for more information.
+
+---
+
+#  Contact
+
+**Project Leader** – Louis Bonheur 
+
+**Data Scientist & Researcher**: A research-driven data scientist who combines strong software engineering foundations with applied AI expertise to build efficient, real-world solutions, especially in edge AI, computer vision and intelligent data systems for impactful domains agriculture and finance(drive impactful business decisions).  
+**Email**: bonheur832@gmail.com 
+
+---
+
+[//]: # (<p align="center">)
+
+[//]: # (  <a href="https://github.com/bonheur832/bank_customer_transaction_risk_analysis">)
+
+[//]: # (    <img src="https://img.shields.io/github/stars/bonheur832/bank_customer_transaction_risk_analysis?style=social">)
+
+[//]: # (  </a>)
+
+[//]: # (  <a href="https://linkedin.com/in/bonheur832">)
+
+[//]: # (    <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin">)
+
+[//]: # (  </a>)
+
+[//]: # (</p>)
+
+<p align="center">
+  <a href="https://github.com/bonheur832/bank_customer_transaction_risk_analysis">
+    <img src="https://img.shields.io/badge/-View%20on%20GitHub-black?style=flat&logo=github&logoColor=white">
+  </a>
+  <a href="https://linkedin.com/in/bonheur832">
+    <img src="https://img.shields.io/badge/-Connect%20on%20LinkedIn-blue?style=flat&logo=linkedin&logoColor=white">
+  </a>
+</p>
+
+---

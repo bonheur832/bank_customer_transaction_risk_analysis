@@ -15,29 +15,6 @@
 </p>
 
 ---
-
-##  Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Business Objectives](#-business-objectives)
-- [Dataset](#-dataset)
-- [Methodology](#-methodology)
-  - [Phase 1 – Transaction Analysis](#phase-1--transaction-analysis)
-  - [Phase 2 – Customer Segmentation](#phase-2--customer-segmentation)
-  - [Phase 3 – Anomaly Detection](#phase-3--anomaly-detection)
-- [Key Findings](#-key-findings)
-- [Performance & ROI](#-performance--roi)
-- [Project Structure](#-project-structure)
-- [Installation & Usage](#-installation--usage)
-- [Results & Outputs](#-results--outputs)
-- [Model Deployment](#-model-deployment)
-- [Recommendations](#-recommendations)
-- [Technologies Used](#-technologies-used)
-- [License](#-license)
-- [Contact](#-contact)
-
----
-
 ##  Project Overview
 
 This project delivers a **complete analytics pipeline** for a financial institution, addressing two critical business needs:
@@ -172,20 +149,19 @@ pip install -r requirements.txt
 ### Dataset Download
 
 Download the creditcard.csv dataset from Kaggle:
-`bank-customer-transaction-risk-analysis`
+`https://www.kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-detection-dataset-2023  
+`
 
 Place the file inside the data/ directory:
 
-data/creditcard.csv
+ `data/creditcard.csv`
 
 ###   Usage
 
 Run the notebooks in the following order:
-
+`
 jupyter notebook notebooks/01_transaction_analysis.ipynb
 jupyter notebook notebooks/02_customer_segmentation.ipynb
 jupyter notebook notebooks/03_anomaly_detection.ipynb
-
-
-
+`
 ---

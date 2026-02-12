@@ -169,21 +169,21 @@ All outputs are automatically saved to the `reports/` and `models/` directories,
 
 ---
 
-# 📊 Results & Deliverables
+# Results & Deliverables
 
 Upon full pipeline execution, the system generates structured analytical outputs designed for executive reporting, operational monitoring, and production deployment.
 
-## 📁 Generated Artifacts
+##  Generated Artifacts
 
-| Domain | Deliverables |
-|--------|--------------|
-| **Transaction Analytics** | `transaction_summary.csv`, `daily_patterns.csv`, `customer_statistics.csv`, `kpi_dashboard.csv`, `executive_summary.txt` |
-| **Customer Segmentation (RFM + K-Means)** | `rfm_scored_customers.csv`, `high_value_customers.csv`, `final_customer_segments.csv`, `cluster_analysis.csv`, `actionable_insights.txt` |
-| **Anomaly Detection (Isolation Forest)** | `performance_comparison.csv`, `high_risk_transactions.csv`, `feature_importance.csv`, `active_alerts.csv`, `final_risk_report.txt`, `model_configuration.json` |
-| **Executive Dashboards** | 3 high-resolution PNG dashboards (Transaction, Segmentation, Risk) |
-| **Production Models** | `isolation_forest_model.pkl`, `robust_scaler.pkl` |
+| Domain                                    | Deliverables                                                                                                                                                   |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Transaction Analytics**                 | `transaction_summary.csv`, `daily_patterns.csv`, `customer_statistics.csv`, `kpi_dashboard.csv`, `executive_summary.txt`                                       |
+| **Customer Segmentation (RFM + K-Means)** | `rfm_scored_customers.csv`, `high_value_customers.csv`, `final_customer_segments.csv`, `cluster_analysis.csv`, `actionable_insights.txt`                       |
+| **Anomaly Detection (Isolation Forest)**  | `performance_comparison.csv`, `high_risk_transactions.csv`, `feature_importance.csv`, `active_alerts.csv`, `final_risk_report.txt`, `model_configuration.json` |
+| **Executive Dashboards**                  | 3 high-resolution PNG dashboards (Transaction, Segmentation, Risk)                                                                                             |
+| **Production Models**                     | `isolation_forest_model.pkl`, `robust_scaler.pkl`                                                                                                              |
 
-### 🎯 Business Impact
+###  Business Impact
 
 - Quantified fraud exposure and anomaly risk levels  
 - Identified high-value and at-risk customer segments  
@@ -195,7 +195,7 @@ All reports are structured for executive presentation, including quantitative in
 
 ---
 
-# 🚀 Model Deployment
+#  Model Deployment
 
 The trained Isolation Forest model and preprocessing scaler are stored in the `models/` directory.
 
@@ -219,7 +219,7 @@ This ensures seamless integration into:
 
 ---
 
-## 🔎 Example: Real-Time Scoring (Production Pattern)
+##  Example: Real-Time Scoring (Production Pattern)
 
 ```python
 import joblib

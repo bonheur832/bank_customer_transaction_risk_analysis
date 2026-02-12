@@ -159,9 +159,9 @@ Place the file inside the data/ directory:
 ###   Usage
 
 Run the notebooks in the following order:
-`
-jupyter notebook notebooks/01_transaction_analysis.ipynb
-jupyter notebook notebooks/02_customer_segmentation.ipynb
-jupyter notebook notebooks/03_anomaly_detection.ipynb
-`
+
+1. jupyter notebook notebooks/01_transaction_analysis.ipynb
+2. jupyter notebook notebooks/02_customer_segmentation.ipynb
+3. jupyter notebook notebooks/03_anomaly_detection.ipynb
+
 ---

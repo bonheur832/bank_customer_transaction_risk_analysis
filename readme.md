@@ -281,12 +281,16 @@ See `LICENSE` for more information.
 
 ---
 
-#  Contact
+## Author
 
-**Project Leader** – Louis Bonheur 
+Louis Bonheur  
+Data Scientist | Machine Learning Engineer | Applied AI Researcher  
 
-**Data Scientist & Researcher**: A research-driven data scientist who combines strong software engineering foundations with applied AI expertise to build efficient, real-world solutions, especially in edge AI, computer vision and intelligent data systems for impactful domains agriculture and finance(drive impactful business decisions).  
-**Email**: bonheur832@gmail.com 
+Focus Areas:  
+Predictive Analytics  
+Customer Behavior Modeling  
+Applied Machine Learning  
+AI-Driven Business Intelligence  
 
 ---
 
